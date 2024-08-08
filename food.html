@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taniti</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="taniti_1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bottomLayer">
+    <header>
+        <ul class="burger">
+            <li onclick=hideBurger()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="stay.html">Lodging</a></li>
+            <li><a href="travel.html">Travel Info</a></li>
+            <li><a href="reqform.html">Contact</a></li>
+        </ul>
+        <ul class="noBurger">
+            <li class="logoLink"><a href="index.html">Taniti</a></li>
+            <li class="hideMobile"><a href="entertainment.html">Entertainment</a></li>
+            <li class="hideMobile"><a href="food.html">Food</a></li>
+            <li class="hideMobile"><a href="stay.html">Lodging</a></li>
+            <li class="hideMobile"><a href="travel.html">Travel Info</a></li>
+            <li class="hideMobile"><a href="reqform.html">Contact</a></li>
+            <li class="hideFull" onclick=showBurger()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+        </ul>
+    </header>
+    <main>
+
+        <div class="ibox2">
+            <h2>Taniti offers a variety of dining choices from local cuisine to American-style fair!
+            </h2>
+            <img src="food3.png" width="25%" alt="Woman sitting at a bar in an open air restaurant">
+        </div>
+
+        <div class="boxes2">
+            <img src="food1.png" width="25%"  alt="Restaurant table next to the ocean">
+            <div class="boxrow">
+                <p>Taniti currently has 10 restaurants: five serve mostly local fish and rice,
+                    three serve American-style meals, and two serve Pan-Asian cuisine.
+                </p>
+            </div>
+        </div>
+        <div class="boxes2">
+            <img src="market.png" width="25%"  alt="Fruit stall in a market">
+            <div class="boxrow">
+                <p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store
+                    that is open 24 hours a day.
+                </p>
+            </div>
+        </div>
+
+        <div class="actionButton">
+            <button onclick="location.href='reqform.html'" class="ctaButton" type="button">Click HERE to start your trip!</button>
+        </div>
+    </main>
+    <footer class="copyright">
+        <div>Copyright 2024</div>
+        <div><span class="citation" onclick="getCiations()">Citations</span></div>
+    </footer>
+</div>
+
+</body>
+</html>
