@@ -16,10 +16,10 @@
 
 <main>
   <div id="mainDiv">
-    <h2>Enter the length of the password to generate and click the button</h2>
+    <h2>Enter a number greater than 0 for the length of the generated password and click the button</h2>
     <div id="FD">
       <label for="inputLength">Length of password: </label>
-      <input type="number" maxlength="128" id="inputLength" name="inputLength" required> <br>
+      <input type="number" min="1" max="128" id="inputLength" name="inputLength" required> <br>
       <input type="button"  id="clicker" value="Generate Password">
     </div>
 
@@ -27,12 +27,16 @@
       Password will appear here
     </div>
   </div>
+
+  <div id="about">
+    <p>Passwords are generated directly in the web browser.  No data is stored on the webserver.</p>
+  </div>
 </main>
 
 <footer>
   <div class="foot">
     <div class="copyright">
-    Copyright 2024 D. Leidgen.  Don't steal my shit.
+    Copyright 2024 D. Leidgen.
     </div>
   </div>
 </footer>
