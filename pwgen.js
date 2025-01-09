@@ -15,9 +15,11 @@ function generatePassword(length) {
 
 function passGen() {
     let numBox = document.getElementById("inputLength");
+    let password = generatePassword(numBox.value);
     const svd = document.getElementById("pw");
-
-    svd.innerText = generatePassword(numBox.value);
+    //alert(password);
+    svd.innerText = password;
     svd.style.backgroundColor = "white";
     svd.style.color = "black";
+    console.log(svd);
 }
